@@ -12,5 +12,5 @@ private
 
 def install_memcached
   puts "Installing Memcache"
-  `aptitude install memcached`
+  puts `aptitude install memcached`
 end
