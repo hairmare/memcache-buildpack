@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+#sync output
+$stdout.sync = true
+
+build_path = ARGV[0]
+cache_path = ARGV[1]
+
+install_memcache
+
+private
+
+def install_memcached
+  puts "Installing Memcache"
+  `aptitude install memcached`
+end
